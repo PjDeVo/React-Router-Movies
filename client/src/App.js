@@ -22,8 +22,8 @@ const App = () => {
           path="/movies/:id"
           render={props => {
             const id = Number(props.match.params.id);
-            console.log("here is the id", id);
-            console.log("movies props", props);
+            // console.log("here is the id", id);
+            // console.log("movies props", props);
 
             return <Movie id={id} addToSavedList={addToSavedList} />;
           }}
